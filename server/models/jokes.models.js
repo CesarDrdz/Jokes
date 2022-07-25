@@ -12,3 +12,5 @@ const Joke = mongoose.model("jokes",JokesSchema)
 // export the model
 module.exports = Joke;
 
+
+// validations go here

@@ -14,5 +14,5 @@ require("./routes/jokes.routes")(app);
 
 // Start the server (at the end if the file)
 app.listen(PORT, () => {
-    console.log('>>> SERVER UP ON PORT ${PORT} <<');
+    console.log(`>>> SERVER UP ON PORT ${PORT} <<`);
 })

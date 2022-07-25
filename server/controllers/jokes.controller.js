@@ -55,8 +55,7 @@ module.exports.updateExistingJoke = (req, res) => {
     console.log(req.params);
     // destructuring 
     const { id } = req.params
-    Joke.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true, runValidators: true })
-        .then(updatedJoke = res.json({ updatedJoke }))
+    Joke.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true, runValidators: true }).then(updatedJoke => res.json({ updatedJoke }))
         .catch(err => res.json({ message: 'Something Went Wrong', error: err }));
 }
 
